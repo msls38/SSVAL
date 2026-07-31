@@ -12,64 +12,68 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="topbar">
-    <a href="#top" aria-label="SSVAL home">
-      <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m3 11 9-8 9 8v9a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1z"/></svg>
-    </a>
-  </header>
-
   <main id="top">
-    <section class="hero container">
-      <p class="acronym">SSVAL</p>
-      <div class="title-row">
-        <h1>
-          <span>Mitigating Visual Degradation in MLLMs via</span>
-          <strong>Spatial-Spectral Visual Anchor Learning</strong>
-        </h1>
-      </div>
+    <section class="hero-shell">
+      <div class="hero container">
+        <p class="acronym">SSVAL</p>
+        <div class="title-row">
+          <h1>
+            <span>Mitigating Visual Degradation in MLLMs via</span>
+            <strong>Spatial-Spectral Visual Anchor Learning</strong>
+          </h1>
+        </div>
 
-      <div class="authors" aria-label="Authors">
-        <span>Qianlong Yang<sup>1</sup></span>
-        <span>Bowen Ye<sup>2</sup></span>
-        <span>Xianda Guo<sup>3,*</sup></span>
-        <span>Yanlun Peng<sup>4</sup></span>
-        <span>Wenke Huang<sup>5</sup></span>
-        <span>Hongyuan Zhang<sup>6</sup></span>
-        <span>Yulei Jia<sup>1,*</sup></span>
-      </div>
+        <div class="authors" aria-label="Authors">
+          <span>Qianlong Yang<sup>1</sup></span>
+          <span>Bowen Ye<sup>2</sup></span>
+          <span>Xianda Guo<sup>3,*</sup></span>
+          <span>Yanlun Peng<sup>4</sup></span>
+          <span>Wenke Huang<sup>5</sup></span>
+          <span>Hongyuan Zhang<sup>6</sup></span>
+          <span>Yulei Jia<sup>1,*</sup></span>
+        </div>
 
-      <div class="institutions">
-        <span><b>1</b> China University of Petroleum (East China)</span>
-        <span><b>2</b> Shanghai Jiao Tong University</span>
-        <span><b>3</b> Wuhan University</span>
-        <span><b>4</b> Great Wall Motor</span>
-        <span><b>5</b> Nanyang Technological University</span>
-        <span><b>6</b> The University of Hong Kong</span>
-      </div>
-      <p class="note"><sup>*</sup> Corresponding authors</p>
-      <div class="actions">
-        <span class="button disabled" aria-label="arXiv paper coming soon">
-          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8zM14 2v6h6M8 13h8M8 17h8"/></svg>
-          arXiv <small>Coming soon</small>
-        </span>
-        <span class="button disabled" aria-label="Code coming soon">
-          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6M14.5 4l-5 16"/></svg>
-          Code <small>Coming soon</small>
-        </span>
+        <div class="institutions">
+          <span><b>1</b> China University of Petroleum (East China)</span>
+          <span><b>2</b> Shanghai Jiao Tong University</span>
+          <span><b>3</b> Wuhan University</span>
+          <span><b>4</b> Great Wall Motor</span>
+          <span><b>5</b> Nanyang Technological University</span>
+          <span><b>6</b> The University of Hong Kong</span>
+        </div>
+        <p class="note"><sup>*</sup> Corresponding authors</p>
+        <div class="actions">
+          <span class="button disabled" aria-label="arXiv paper coming soon">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8zM14 2v6h6M8 13h8M8 17h8"/></svg>
+            arXiv <small>Coming soon</small>
+          </span>
+          <span class="button disabled" aria-label="Code coming soon">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6M14.5 4l-5 16"/></svg>
+            Code <small>Coming soon</small>
+          </span>
+        </div>
       </div>
     </section>
 
-    <section class="intro container">
-      <div class="question">How can an MLLM retain rich visual evidence as representations propagate through deeper language layers?</div>
-      <p class="intro-copy"><strong>SSVAL learns visual anchors that stay with the model during inference.</strong> Prompts absorb complementary knowledge from external vision foundation models during training, while spatial and frequency-domain objectives provide targeted supervision to intermediate layers. The result is stronger visual perception without carrying the external VFM into deployment.</p>
+    <section class="intro container wide">
+      <div class="intro-grid">
+        <div>
+          <p class="section-label">The challenge</p>
+          <div class="question">How can an MLLM retain rich visual evidence as representations propagate through deeper language layers?</div>
+        </div>
+        <p class="intro-copy"><strong>SSVAL learns visual anchors that stay with the model during inference.</strong> Prompts absorb complementary knowledge from external vision foundation models during training, while spatial and frequency-domain objectives provide targeted supervision to intermediate layers. The result is stronger visual perception without carrying the external VFM into deployment.</p>
+      </div>
       <figure class="main-figure">
-        <img src="assets/similarity-decay.png" alt="SSVAL benchmark performance and layer-wise visual representation similarity compared with baseline and VIRAL" width="2053" height="522">
+        <a class="figure-link" href="assets/similarity-decay.png" target="_blank" rel="noopener" aria-label="Open the benchmark and representation similarity figure at full resolution" title="Open full-resolution figure">
+          <img src="assets/similarity-decay.png" alt="SSVAL benchmark performance and layer-wise visual representation similarity compared with baseline and VIRAL" width="2053" height="522">
+        </a>
         <figcaption>SSVAL improves multimodal perception while preserving visual representations in deeper LLM layers.</figcaption>
       </figure>
     </section>
 
     <section class="section-band">
       <div class="container narrow">
+        <p class="section-label">Overview</p>
         <h2>Abstract</h2>
         <div class="abstract-text">
           <p>Despite the progress of multimodal large language models (MLLMs), they continue to exhibit deficiencies in visual perception. Following visual instruction tuning, internal MLLM representations rapidly deviate from their original semantic states during inference, causing severe information degradation. While existing methods attempt to leverage external vision foundation models (VFMs) to align internal representations, we find that direct alignment with VFMs enhances visual semantics but fails to mitigate representation deviation. To address this, we propose Spatial-Spectral Visual Anchor Learning (SSVAL). The core of SSVAL is Visual Anchor Prompt Injection (VAPI), which introduces prompts that absorb rich knowledge from external VFMs during training, enabling them to serve as stable visual anchors that mitigate representation deviation during inference. Additionally, we incorporate auxiliary spatial and frequency-domain representation alignment losses to provide complementary vision-specific supervision at intermediate LLM layers. Extensive experiments demonstrate that SSVAL significantly outperforms existing methods.</p>
@@ -77,12 +81,17 @@
       </div>
     </section>
 
-    <section class="method container">
-      <h2>Model Architecture</h2>
+    <section class="method container wide">
+      <div class="section-heading">
+        <p class="section-label">Approach</p>
+        <h2>Model Architecture</h2>
+      </div>
       <figure class="main-figure">
-        <img src="assets/pipeline.png" alt="SSVAL pipeline with visual anchor prompt injection and spatial-spectral representation alignment" width="1644" height="851" loading="lazy">
+        <a class="figure-link" href="assets/pipeline.png" target="_blank" rel="noopener" aria-label="Open the SSVAL model architecture at full resolution" title="Open full-resolution figure">
+          <img src="assets/pipeline.png" alt="SSVAL pipeline with visual anchor prompt injection and spatial-spectral representation alignment" width="1644" height="851" loading="lazy">
+        </a>
       </figure>
-      <h3>Anchors at inference, complementary supervision at training.</h3>
+      <h3>Anchors at inference. Complementary supervision at training.</h3>
       <div class="method-grid">
         <article><b>VAPI</b><p>Prompts absorb complementary VFM knowledge through gated cross-attention, then remain as lightweight visual anchors at inference.</p></article>
         <article><b>SpaRA</b><p>Multi-scale spatial alignment preserves both fine-grained details and global structure across intermediate layers.</p></article>
@@ -91,8 +100,11 @@
     </section>
 
     <section class="section-band results">
-      <div class="container">
-        <h2>Experiment Results</h2>
+      <div class="container wide">
+        <div class="section-heading">
+          <p class="section-label">Evaluation</p>
+          <h2>Experiment Results</h2>
+        </div>
         <p class="result-lead"><strong>SSVAL achieves consistent gains with negligible inference cost.</strong> The training-only alignment objectives add no deployment overhead, while the retained visual anchors require only a marginal increase in parameters and computation.</p>
         <div class="metrics" aria-label="Key results">
           <div><strong>+6.47%</strong><span>CV-Bench 2D</span></div>
@@ -124,11 +136,15 @@
           </div>
         </div>
         <figure class="main-figure">
-          <img src="assets/qualitative.png" alt="Qualitative comparison of PCA visualizations and attention maps for Baseline, VIRAL, and SSVAL" width="2381" height="1134" loading="lazy">
+          <a class="figure-link" href="assets/qualitative.png" target="_blank" rel="noopener" aria-label="Open the qualitative comparison at full resolution" title="Open full-resolution figure">
+            <img src="assets/qualitative.png" alt="Qualitative comparison of PCA visualizations and attention maps for Baseline, VIRAL, and SSVAL" width="2381" height="1134" loading="lazy">
+          </a>
           <figcaption>SSVAL preserves clearer visual structure and focuses attention on task-relevant regions.</figcaption>
         </figure>
         <figure class="main-figure prompt-figure">
-          <img src="assets/prompt-attention.png" alt="Attention maps showing specialized roles learned by four visual anchor prompts" width="2750" height="907" loading="lazy">
+          <a class="figure-link" href="assets/prompt-attention.png" target="_blank" rel="noopener" aria-label="Open the visual anchor prompt attention maps at full resolution" title="Open full-resolution figure">
+            <img src="assets/prompt-attention.png" alt="Attention maps showing specialized roles learned by four visual anchor prompts" width="2750" height="907" loading="lazy">
+          </a>
           <figcaption>Visual anchor prompts develop complementary foreground and background specializations.</figcaption>
         </figure>
       </div>
