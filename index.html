@@ -63,8 +63,8 @@
         <p class="intro-copy"><strong>SSVAL learns visual anchors that stay with the model during inference.</strong> Prompts absorb complementary knowledge from external vision foundation models during training, while spatial and frequency-domain objectives provide targeted supervision to intermediate layers. The result is stronger visual perception without carrying the external VFM into deployment.</p>
       </div>
       <figure class="main-figure">
-        <a class="figure-link" href="assets/similarity-decay.png" target="_blank" rel="noopener" aria-label="Open the benchmark and representation similarity figure at full resolution" title="Open full-resolution figure">
-          <img src="assets/similarity-decay.png" alt="SSVAL benchmark performance and layer-wise visual representation similarity compared with baseline and VIRAL" width="2053" height="522">
+        <a class="figure-link" href="assets/similarity-decay.pdf" target="_blank" rel="noopener" aria-label="Open the benchmark and representation similarity figure as a PDF" title="Open source PDF">
+          <img src="assets/similarity-decay.svg" alt="SSVAL benchmark performance and layer-wise visual representation similarity compared with baseline and VIRAL" width="2053" height="522">
         </a>
         <figcaption>SSVAL improves multimodal perception while preserving visual representations in deeper LLM layers.</figcaption>
       </figure>
@@ -84,8 +84,8 @@
         <h2>Model Architecture</h2>
       </div>
       <figure class="main-figure">
-        <a class="figure-link" href="assets/pipeline.png" target="_blank" rel="noopener" aria-label="Open the SSVAL model architecture at full resolution" title="Open full-resolution figure">
-          <img src="assets/pipeline.png" alt="SSVAL pipeline with visual anchor prompt injection and spatial-spectral representation alignment" width="1644" height="851" loading="lazy">
+        <a class="figure-link" href="assets/pipeline.pdf" target="_blank" rel="noopener" aria-label="Open the SSVAL model architecture as a PDF" title="Open source PDF">
+          <img src="assets/pipeline.svg" alt="SSVAL pipeline with visual anchor prompt injection and spatial-spectral representation alignment" width="1644" height="851" loading="lazy">
         </a>
       </figure>
       <h3>Anchors at inference. Complementary supervision at training.</h3>
@@ -132,14 +132,14 @@
           </div>
         </div>
         <figure class="main-figure">
-          <a class="figure-link" href="assets/qualitative.png" target="_blank" rel="noopener" aria-label="Open the qualitative comparison at full resolution" title="Open full-resolution figure">
-            <img src="assets/qualitative.png" alt="Qualitative comparison of PCA visualizations and attention maps for Baseline, VIRAL, and SSVAL" width="2381" height="1134" loading="lazy">
+          <a class="figure-link" href="assets/qualitative.pdf" target="_blank" rel="noopener" aria-label="Open the qualitative comparison as a PDF" title="Open source PDF">
+            <img src="assets/qualitative.svg" alt="Qualitative comparison of PCA visualizations and attention maps for Baseline, VIRAL, and SSVAL" width="2381" height="1134" loading="lazy">
           </a>
           <figcaption>SSVAL preserves clearer visual structure and focuses attention on task-relevant regions.</figcaption>
         </figure>
         <figure class="main-figure prompt-figure">
-          <a class="figure-link" href="assets/prompt-attention.png" target="_blank" rel="noopener" aria-label="Open the visual anchor prompt attention maps at full resolution" title="Open full-resolution figure">
-            <img src="assets/prompt-attention.png" alt="Attention maps showing specialized roles learned by four visual anchor prompts" width="2750" height="907" loading="lazy">
+          <a class="figure-link" href="assets/prompt-attention.pdf" target="_blank" rel="noopener" aria-label="Open the visual anchor prompt attention maps as a PDF" title="Open source PDF">
+            <img src="assets/prompt-attention.svg" alt="Attention maps showing specialized roles learned by four visual anchor prompts" width="2750" height="907" loading="lazy">
           </a>
           <figcaption>Visual anchor prompts develop complementary foreground and background specializations.</figcaption>
         </figure>
