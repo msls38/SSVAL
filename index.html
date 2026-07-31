@@ -101,6 +101,30 @@
           <div><strong>+1.55%</strong><span>Inference parameters</span></div>
           <div><strong>+0.04%</strong><span>Inference FLOPs</span></div>
         </div>
+        <div class="table-block">
+          <h3>Main Results</h3>
+          <p>Comparison on six multimodal benchmarks across vision encoders and LLM scales.</p>
+          <div class="table-scroll" role="region" aria-label="Main benchmark results" tabindex="0">
+            <table>
+              <thead>
+                <tr><th>Method</th><th>Vision Encoder</th><th>LLM</th><th>CV-Bench<sup>2D</sup></th><th>MMVP</th><th>MMStar</th><th>MME</th><th>POPE</th><th>MM-Bench</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Baseline</td><td rowspan="3">CLIP</td><td rowspan="3">Qwen2.5-3B</td><td>51.53%</td><td>28.00%</td><td>36.40%</td><td>1579.16</td><td><strong>86.97%</strong></td><td>74.59%</td></tr>
+                <tr><td>VIRAL</td><td>52.85% <small class="gain">+1.32</small></td><td>32.00% <small class="gain">+4.00</small></td><td>37.07% <small class="gain">+0.67</small></td><td>1531.05 <small class="loss">-48.11</small></td><td>84.97% <small class="loss">-2.00</small></td><td>75.38% <small class="gain">+0.79</small></td></tr>
+                <tr class="ours"><td><strong>SSVAL</strong></td><td><strong>54.80%</strong> <small class="gain">+3.27</small></td><td><strong>33.33%</strong> <small class="gain">+5.33</small></td><td><strong>38.93%</strong> <small class="gain">+2.53</small></td><td><strong>1613.94</strong> <small class="gain">+34.78</small></td><td>86.60% <small class="loss">-0.37</small></td><td><strong>77.41%</strong> <small class="gain">+2.82</small></td></tr>
+
+                <tr class="group-start"><td>Baseline</td><td rowspan="3">CLIP</td><td rowspan="3">Qwen2.5-7B</td><td>58.97%</td><td>33.47%</td><td>39.20%</td><td>1743.56</td><td>85.88%</td><td>78.54%</td></tr>
+                <tr><td>VIRAL</td><td>60.50% <small class="gain">+1.53</small></td><td>36.07% <small class="gain">+2.60</small></td><td>39.67% <small class="gain">+0.47</small></td><td>1765.65 <small class="gain">+22.09</small></td><td>84.92% <small class="loss">-0.96</small></td><td>78.54% <small>+0.00</small></td></tr>
+                <tr class="ours"><td><strong>SSVAL</strong></td><td><strong>65.44%</strong> <small class="gain">+6.47</small></td><td><strong>41.33%</strong> <small class="gain">+7.86</small></td><td><strong>40.93%</strong> <small class="gain">+1.73</small></td><td><strong>1822.72</strong> <small class="gain">+79.16</small></td><td><strong>86.10%</strong> <small class="gain">+0.22</small></td><td><strong>79.65%</strong> <small class="gain">+1.11</small></td></tr>
+
+                <tr class="group-start"><td>Baseline</td><td rowspan="3">SigLIP2</td><td rowspan="3">Qwen2.5-7B</td><td>69.82%</td><td>52.67%</td><td>43.73%</td><td>1924.64</td><td>88.53%</td><td>82.01%</td></tr>
+                <tr><td>VIRAL</td><td>70.17% <small class="gain">+0.35</small></td><td>47.33% <small class="loss">-5.34</small></td><td>43.13% <small class="loss">-0.60</small></td><td>1856.21 <small class="loss">-68.43</small></td><td>88.07% <small class="loss">-0.46</small></td><td>81.77% <small class="loss">-0.24</small></td></tr>
+                <tr class="ours"><td><strong>SSVAL</strong></td><td><strong>71.14%</strong> <small class="gain">+1.32</small></td><td><strong>55.33%</strong> <small class="gain">+2.66</small></td><td><strong>44.87%</strong> <small class="gain">+1.14</small></td><td><strong>1950.21</strong> <small class="gain">+25.57</small></td><td><strong>88.67%</strong> <small class="gain">+0.14</small></td><td><strong>82.65%</strong> <small class="gain">+0.64</small></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
         <figure class="main-figure">
           <img src="assets/qualitative.png" alt="Qualitative comparison of PCA visualizations and attention maps for Baseline, VIRAL, and SSVAL" width="2381" height="1134" loading="lazy">
           <figcaption>SSVAL preserves clearer visual structure and focuses attention on task-relevant regions.</figcaption>
