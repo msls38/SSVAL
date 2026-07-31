@@ -58,7 +58,6 @@
     <section class="intro container wide">
       <div class="intro-grid">
         <div>
-          <p class="section-label">The challenge</p>
           <div class="question">How can an MLLM retain rich visual evidence as representations propagate through deeper language layers?</div>
         </div>
         <p class="intro-copy"><strong>SSVAL learns visual anchors that stay with the model during inference.</strong> Prompts absorb complementary knowledge from external vision foundation models during training, while spatial and frequency-domain objectives provide targeted supervision to intermediate layers. The result is stronger visual perception without carrying the external VFM into deployment.</p>
@@ -73,7 +72,6 @@
 
     <section class="section-band">
       <div class="container narrow">
-        <p class="section-label">Overview</p>
         <h2>Abstract</h2>
         <div class="abstract-text">
           <p>Despite the progress of multimodal large language models (MLLMs), they continue to exhibit deficiencies in visual perception. Following visual instruction tuning, internal MLLM representations rapidly deviate from their original semantic states during inference, causing severe information degradation. While existing methods attempt to leverage external vision foundation models (VFMs) to align internal representations, we find that direct alignment with VFMs enhances visual semantics but fails to mitigate representation deviation. To address this, we propose Spatial-Spectral Visual Anchor Learning (SSVAL). The core of SSVAL is Visual Anchor Prompt Injection (VAPI), which introduces prompts that absorb rich knowledge from external VFMs during training, enabling them to serve as stable visual anchors that mitigate representation deviation during inference. Additionally, we incorporate auxiliary spatial and frequency-domain representation alignment losses to provide complementary vision-specific supervision at intermediate LLM layers. Extensive experiments demonstrate that SSVAL significantly outperforms existing methods.</p>
@@ -83,7 +81,6 @@
 
     <section class="method container wide">
       <div class="section-heading">
-        <p class="section-label">Approach</p>
         <h2>Model Architecture</h2>
       </div>
       <figure class="main-figure">
@@ -102,7 +99,6 @@
     <section class="section-band results">
       <div class="container wide">
         <div class="section-heading">
-          <p class="section-label">Evaluation</p>
           <h2>Experiment Results</h2>
         </div>
         <p class="result-lead"><strong>SSVAL achieves consistent gains with negligible inference cost.</strong> The training-only alignment objectives add no deployment overhead, while the retained visual anchors require only a marginal increase in parameters and computation.</p>

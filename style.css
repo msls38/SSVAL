@@ -120,14 +120,6 @@ sup { color: #50737f; font-size: .68em; }
   max-width: 1110px;
   margin: 0 auto 52px;
 }
-.section-label {
-  margin: 0 0 12px;
-  color: var(--coral);
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: .14em;
-  text-transform: uppercase;
-}
 .question {
   padding-left: 22px;
   border-left: 3px solid var(--blue);
@@ -144,9 +136,7 @@ sup { color: #50737f; font-size: .68em; }
 figcaption { max-width: 720px; margin: 14px auto 0; color: var(--muted); text-align: center; font-size: 12px; }
 
 .section-band { padding: 80px 0 84px; background: var(--band); border-block: 1px solid #e7ebea; }
-.section-band .section-label { text-align: center; }
 .section-heading { margin-bottom: 36px; text-align: center; }
-.section-heading .section-label { margin-bottom: 9px; }
 h2 {
   margin: 0 0 30px;
   font-family: Georgia, "Times New Roman", serif;
