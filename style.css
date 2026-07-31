@@ -66,15 +66,13 @@ h2 { margin: 0 0 30px; text-align: center; font-size: 33px; line-height: 1.2; }
 .metrics strong { display: block; color: var(--blue); font-size: 27px; }
 .metrics span { display: block; color: var(--muted); font-size: 12px; }
 .table-block { margin: 0 0 52px; }
-.table-block h3 { margin: 0 0 5px; text-align: center; font-size: 23px; }
-.table-block > p { margin: 0 0 20px; color: var(--muted); text-align: center; font-size: 14px; }
-.table-scroll { overflow-x: auto; border: 1px solid #dce2e5; background: #fff; scrollbar-width: thin; }
-table { width: 100%; min-width: 980px; border-collapse: collapse; font-size: 12px; line-height: 1.35; }
-th, td { padding: 11px 9px; border-right: 1px solid #e8ebed; border-bottom: 1px solid #e8ebed; text-align: center; white-space: nowrap; }
-th:last-child, td:last-child { border-right: 0; }
+.table-scroll { overflow-x: auto; background: #fff; scrollbar-width: thin; }
+table { width: 100%; min-width: 980px; border: 1.5px solid #8f9aa1; border-collapse: collapse; font-size: 12px; line-height: 1.35; }
+caption { padding: 0 8px 17px; color: #4f5960; text-align: center; caption-side: top; font-size: 13px; line-height: 1.45; }
+caption strong { color: var(--ink); }
+th, td { padding: 11px 9px; border: 1px solid #aeb7bc; text-align: center; white-space: nowrap; }
 thead th { color: #3d4850; background: #edf1f3; font-weight: 700; }
-tbody tr:last-child td { border-bottom: 0; }
-tbody .group-start td { border-top: 2px solid #cbd3d7; }
+tbody .group-start td { border-top: 2px solid #7f8c93; }
 tbody .ours td { background: #eaf4f8; }
 td[rowspan] { color: #4d5961; background: #fafbfb; font-weight: 600; }
 td small { margin-left: 2px; color: #7b8388; font-size: 9px; }
