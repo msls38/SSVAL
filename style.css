@@ -32,7 +32,6 @@ sup { color: #557184; font-size: .68em; }
 .institutions { display: flex; justify-content: center; flex-wrap: wrap; gap: 4px 20px; max-width: 930px; margin-inline: auto; color: var(--muted); font-size: 13px; }
 .institutions b { color: #477e9f; }
 .note { margin: 4px 0 14px; color: var(--muted); font-size: 11px; }
-.venue { margin: 0 0 18px; font-size: 20px; font-weight: 700; }
 .actions { display: flex; justify-content: center; flex-wrap: wrap; gap: 8px; }
 .button { height: 41px; display: inline-flex; align-items: center; gap: 8px; padding: 0 15px; border-radius: 22px; color: #fff; background: #353535; font-weight: 500; }
 .button svg { width: 17px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
@@ -80,7 +79,6 @@ footer a:hover { color: var(--blue); }
   h1 span, h1 strong { display: inline; }
   h1 strong::before { content: " "; }
   .authors { gap: 3px 15px; font-size: 15px; }
-  .venue { font-size: 18px; }
   .question { padding: 23px 18px; font-size: 23px; }
   .intro-copy, .result-lead, .abstract-text { text-align: left; font-size: 15px; }
   .intro { padding-bottom: 64px; }

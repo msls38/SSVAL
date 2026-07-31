@@ -1,6 +1,6 @@
 # SSVAL
 
-Official project page for **Mitigating Visual Degradation in MLLMs via Spatial-Spectral Visual Anchor Learning**, accepted at ACM Multimedia 2026. This repository contains only the public website; paper sources are maintained separately.
+Official project page for **Mitigating Visual Degradation in MLLMs via Spatial-Spectral Visual Anchor Learning**. This repository contains only the public website; paper sources are maintained separately.
 
 ## Project page
 
