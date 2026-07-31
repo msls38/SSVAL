@@ -21,16 +21,15 @@ img { display: block; max-width: 100%; }
 .topbar a { display: grid; place-items: center; text-decoration: none; }
 .topbar svg { width: 16px; fill: none; stroke: currentColor; stroke-width: 1.9; stroke-linejoin: round; }
 
-.hero { padding-top: 68px; padding-bottom: 74px; text-align: center; }
-.title-row { display: flex; align-items: center; justify-content: center; gap: 18px; margin: 0 auto 26px; }
-.paper-mark { width: 78px; aspect-ratio: 1; flex: 0 0 auto; display: grid; place-content: center; color: #fff; background: #375f78; border-radius: 50% 50% 46% 54% / 55% 45% 55% 45%; line-height: .9; transform: rotate(-3deg); }
-.paper-mark span { font-size: 25px; font-weight: 700; }
-.paper-mark small { margin-top: 6px; font-size: 11px; letter-spacing: .14em; }
-h1 { max-width: 790px; margin: 0; text-align: left; font-size: clamp(32px, 4.2vw, 47px); font-weight: 600; line-height: 1.08; }
-h1 strong { color: #315f7a; font-weight: 600; }
-.authors { display: flex; justify-content: center; flex-wrap: wrap; gap: 4px 22px; margin: 0 auto 14px; color: #477e9f; font-size: 17px; font-weight: 600; }
+.hero { padding-top: 54px; padding-bottom: 72px; text-align: center; }
+.acronym { display: inline-block; margin: 0 0 15px; padding: 5px 10px; color: #315f7a; border: 1px solid #a9bfcc; border-radius: 3px; font-size: 12px; font-weight: 700; letter-spacing: .12em; }
+.title-row { margin: 0 auto 30px; }
+h1 { max-width: 970px; margin: 0 auto; text-align: center; font-size: clamp(36px, 3.35vw, 42px); font-weight: 600; line-height: 1.14; }
+h1 span, h1 strong { display: block; }
+h1 strong { margin-top: 3px; color: #315f7a; font-weight: 600; }
+.authors { display: flex; justify-content: center; flex-wrap: wrap; gap: 4px 23px; margin: 0 auto 14px; color: #477e9f; font-size: 18px; font-weight: 600; }
 sup { color: #557184; font-size: .68em; }
-.institutions { display: flex; justify-content: center; flex-wrap: wrap; gap: 3px 18px; max-width: 900px; margin-inline: auto; color: var(--muted); font-size: 12px; }
+.institutions { display: flex; justify-content: center; flex-wrap: wrap; gap: 4px 20px; max-width: 930px; margin-inline: auto; color: var(--muted); font-size: 13px; }
 .institutions b { color: #477e9f; }
 .note { margin: 4px 0 14px; color: var(--muted); font-size: 11px; }
 .venue { margin: 0 0 18px; font-size: 20px; font-weight: 700; }
@@ -75,10 +74,11 @@ footer a:hover { color: var(--blue); }
 
 @media (max-width: 700px) {
   .topbar span { display: none; }
-  .hero { padding-top: 45px; padding-bottom: 58px; }
-  .title-row { display: block; margin-bottom: 25px; }
-  .paper-mark { width: 64px; margin: 0 auto 18px; }
-  h1 { text-align: center; font-size: 34px; }
+  .hero { padding-top: 38px; padding-bottom: 58px; }
+  .title-row { margin-bottom: 27px; }
+  h1 { text-align: center; font-size: 30px; }
+  h1 span, h1 strong { display: inline; }
+  h1 strong::before { content: " "; }
   .authors { gap: 3px 15px; font-size: 15px; }
   .venue { font-size: 18px; }
   .question { padding: 23px 18px; font-size: 23px; }
